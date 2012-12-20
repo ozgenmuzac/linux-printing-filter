@@ -1,0 +1,5 @@
+#!/bin/sh
+
+python /usr/lib/cups/filter/maincups.py "$1" "$2" "$3" "$4" "$5" $6 | pdftopdf "$1" "$2" "$3" "$4" "$5" $6
+
+exit $?
